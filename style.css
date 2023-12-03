@@ -3,16 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+.loader_bg {
+    position: fixed;
+    z-index: 9999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
 
+.loader {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader img {
+    width: 280px;
+}
 .navbar {
     display: flex;
     align-items: center;
-    padding: 20px;
+    margin: auto;
+    
 }
 
 nav {
     flex: 1;
     text-align: right;
+    font-size: 25px;
 }
 
 nav ul {
@@ -22,7 +47,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 a {
@@ -36,10 +61,11 @@ p {
 }
 
 .container {
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-inline-start: 25px;
+    max-width: 1200px;
+    position: relative;
+    display:block;
+    padding: 8px 30px;
+    margin: 30px 0;
 
 }
 
@@ -53,41 +79,49 @@ p {
 
 .col-2 img {
     max-width: 100%;
-    padding: 50px 0;
+ 
 
 }
 
 .col-2 h1 {
     font-size: 50px;
-    line-height: 62px;
-    margin: 25px;
+    line-height: 50px;
+   
 }
 
 .btn {
     display: inline-block;
     background: rgb(20, 12, 17);
-    color: rgb(243, 238, 238);
+    color: rgb(239, 238, 243);
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 45px;
     transition: background 0.5s;
+    width: 50;
+    height: 20;
 
 }
 
 .btn:hover {
-    background: #555;
+    background: #b08fef;
 }
 
 .header {
-    background: radial-gradient(#fff, #ffd6d6);
+    background: radial-gradient(#fff, rgb(233, 195, 5));
 }
 
 .header.row {
-    margin-top: 70px;
+    margin-top: 30px;
 }
-
+.logo{
+    margin: auto;
+}
+.size{
+    font-size: 25px;
+    align-items:center;
+}
 .categories {
-    margin: 70px 0;
+    margin: 50px 0;
 }
 
 .col-3 {
@@ -111,11 +145,15 @@ p {
 .col-4 {
     flex-basis: 25%;
     padding: 10px;
-    min-width: 200px;
+    min-width: 250px;
     margin-bottom: 50px;
     transition: transform 0.5s;
 }
-
+.content{
+    flex: 2;
+    padding: 20px;
+    margin-top: 60px;
+}
 .col-4 img {
     width: 100%;
 
@@ -139,6 +177,7 @@ p {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+   
 
 }
 
@@ -162,12 +201,14 @@ p {
 /*---------offer-------*/
 
 .offer {
-    background: radial-gradient(#fff, #ffd6d6);
+    background: radial-gradient(#fff, rgb(103, 238, 7));
+    border-radius: 10%;
 
 }
 
 .col-2.offer-img {
-    padding: 50px;
+    padding: 60px;
+    
 }
 
 small {
